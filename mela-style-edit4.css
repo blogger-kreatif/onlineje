@@ -135,15 +135,15 @@ button.btn-close:hover{background-position:-163px -44px;}
 #responsive-ul li { float:left; background-repeat:no-repeat;vertical-align:bottom;  font-size: 0; background-position:center bottom; width:28px; height:28px; margin-right:4px; cursor:pointer;}
 
 #responsive-ul li#desktop{ background-image:url('https://lh3.googleusercontent.com/-552krc8bpLM/WKL208Qb2nI/AAAAAAAADNQ/_RuvHnXv-usD7ROxXoKz1173CkoXaT1XwCEw/h30/sprite.png'); background-position: -6px -6px;}
-#responsive-ul li#desktop:hover { background-position:-15px -44px;}
+#responsive-ul li#desktop:hover { background-position:-0px -44px;}
 #responsive-ul li#tablet-portrait{ background-image:url('https://lh3.googleusercontent.com/-552krc8bpLM/WKL208Qb2nI/AAAAAAAADNQ/_RuvHnXv-usD7ROxXoKz1173CkoXaT1XwCEw/h30/sprite.png'); background-position: -70px -6px;}
-#responsive-ul li#tablet-portrait:hover {background-position:-50px -44px;}
+#responsive-ul li#tablet-portrait:hover {background-position:-0px -44px;}
 #responsive-ul li#tablet-landscape{ background-image:url('https://lh3.googleusercontent.com/-552krc8bpLM/WKL208Qb2nI/AAAAAAAADNQ/_RuvHnXv-usD7ROxXoKz1173CkoXaT1XwCEw/h30/sprite.png'); background-position: -37px -6px;}
-#responsive-ul li#tablet-landscape:hover {background-position:-57px -44px;}
+#responsive-ul li#tablet-landscape:hover {background-position:-0px -44px;}
 #responsive-ul li#smartphone-portrait{ background-image:url('https://lh3.googleusercontent.com/-552krc8bpLM/WKL208Qb2nI/AAAAAAAADNQ/_RuvHnXv-usD7ROxXoKz1173CkoXaT1XwCEw/h30/sprite.png'); width:25px; background-position: -129px -6px;}
-#responsive-ul li#smartphone-portrait:hover {background-position:-149px -44px;}
+#responsive-ul li#smartphone-portrait:hover {background-position:-0px -44px;}
 #responsive-ul li#smartphone-landscape{ background-image:url('https://lh3.googleusercontent.com/-552krc8bpLM/WKL208Qb2nI/AAAAAAAADNQ/_RuvHnXv-usD7ROxXoKz1173CkoXaT1XwCEw/h30/sprite.png'); margin-right:0; background-position: -103px -6px;}
-#responsive-ul li#smartphone-landscape:hover {background-position:-143px -44px;}
+#responsive-ul li#smartphone-landscape:hover {background-position:-0px -44px;}
 
 
 #iFrameBlock.tablet-landscape,
