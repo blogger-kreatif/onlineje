@@ -1,0 +1,1483 @@
+/* 
+ * The basics 
+ */
+html,body {
+	height: 100% !important;
+	background: none;
+	font-size: 18px;
+	line-height: 1.5em;
+}
+html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;}
+
+#wrapper {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	height: auto !important;
+}
+
+#main_container {
+	width: 100%;
+	background-image: url("/themes/sky/images/sky2.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+#top_navigation {
+	background-color: #358bbf;
+	width: 100%;
+	border-bottom: 1px solid #357dab;
+	position: relative;
+	z-index: 1;
+	padding: 1em 0 0 0;
+}
+
+p {
+	margin: 1em 0 1em 0;
+	line-height: 1.5em;
+}
+
+.small {
+	font-size: 0.9em;
+}
+
+/**
+ * Header
+ */
+a#logo {
+	font-weight: 600;
+	font-size: 2em;
+	font-family: 'Exo 2', Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+a#logo span {
+	font-size: 0.8em;
+}
+
+.g-gplus-container {
+	display: inline-block;
+	padding: 0 0 0 1em;
+}
+
+#right_menu {
+	height: 100%;
+	padding: 0.2em 0 0.9em 0;
+}
+
+#right_menu a {
+	color: #fff;
+	padding: 0.2em 0.5em 0.2em 0.5em;
+	text-decoration: none;
+	font-size: 1.1em;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+#right_menu a.button {
+	margin-left: 0.5em;
+	background-color: #105680;
+	border-radius: 4px;
+}
+
+/**
+ * Options Container of the Emulation Screen
+ */
+#options_wrapper {
+	position: relative;
+}
+#options_menu {
+	width: 100%;
+	min-height: 44px;
+	background-color: rgba(200, 214, 228, 0.25);
+	border-bottom: 1px solid rgba(125, 160, 182, 0.25);
+	padding: 0 0 0.4em 0;
+}
+
+#options_menu nav {
+	height: 100%;
+	font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	padding: 0.6em 0 0 0;
+}
+#options_menu .emulation_menu_item {
+	display: inline;
+	color: #1c5b83;
+	text-decoration: none;
+	z-index: 1;
+	padding: 0 0 0 1.6em;
+	background-size: 1.2em 1.2em;
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+#emulation_options_switch {
+	background-image: url('/themes/sky/images/gears.svg');
+}
+
+#emulation_devices_switch {
+	background-image: url('/themes/sky/images/smartphone.svg');
+	margin: 0 0 0 1.2em;
+}
+
+#options_menu #new_url {
+	position: relative;
+}
+
+#options_menu [type="text"] {
+	background-color: #FFFFFF;
+	border: 1px solid #CED3D6;
+	border-radius: 4px;
+	color: #54636D;
+	float: right;
+	margin: 0.5em 0 0 0;
+	padding: 3px 1.2em 4px 4px;
+	width: 100%;
+	font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+
+#options_menu #play_link {
+	padding: 13px 14px 13px 12px;
+	position: absolute;
+	right: 0;
+	top: 13px;
+	z-index: 1;
+	background-image: url('/themes/sky/images/triangle.svg');
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	transform: rotate(90deg) translate(-1px, 0);
+	-ms-transform: rotate(90deg) translate(-1px, 0); /* IE 9 */
+	-webkit-transform: rotate(90deg) translate(-2px, 0); /* Safari and Chrome */
+	-o-transform: rotate(90deg) translate(-1px, 0); /* Opera */
+	-moz-transform: rotate(90deg) translate(-1px, 0); /* Firefox */
+}
+
+/**
+ * Drawers
+ */
+#pseudo_shadow_top {
+	float: left;
+	width: 62.5em; /* Width is calculated in js each time */
+	height: 52px;
+	background-size: 62.5em auto;
+	background-repeat: no-repeat;
+	background-position: left calc( 50% + 0px);
+}
+
+#pseudo_shadow_top.options_arrow {
+	background-image: url('/themes/sky/images/shadow_top_arrow_1.png');
+}
+
+#pseudo_shadow_top.devices_arrow {
+	background-image: url('/themes/sky/images/shadow_top_arrow_2.png');
+}
+
+.pseudo_shadow {
+	background-image: url('/themes/sky/images/shadow_top.png');
+	background-position: center center;
+	background-repeat: repeat-x;
+	height: 52px;
+	width: 100%;
+	float: left;
+}
+
+#options_arrows {
+	display: none;
+}
+#options_arrows>div {
+	position: relative;
+}
+
+#options_container {
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.25);
+	background-image: none, url('/themes/sky/images/shadow_bottom.png');
+	background-position: center calc( 100% + 17px );
+	background-repeat: repeat-x;
+	position: relative;
+	top: -24px;
+	padding: 24px 0 0 0;
+	clear: both;
+}
+
+#emulation_options {
+	padding: 30px 0 60px 0;
+}
+
+#emulation_options h3 {
+	color: #1C5B83;
+	float: left;
+	margin: 0 0 10px 0;
+	width: 100%;
+	font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+	font-size: 1.26em;
+	font-weight: 400;
+}
+
+#emulation_options h3.margin_top {margin-top: 30px;}
+
+#emulation_options button {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: medium none;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.22), 0 0 6px 0 rgba(128, 128, 128, 0.3) inset;
+	color: #9AB0BF;
+	float: left;
+	font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	margin-right: 10px;
+	padding: 6px 1em;
+	text-align: center;
+	width: 100%;
+}
+
+#emulation_options button.active {
+	background: none repeat scroll 0 0 #8ABA28;
+	box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.25) inset;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+	transform: translate(0px, -1px);
+}
+
+#emulation_options button.disabled {
+	background-color: #ccc;
+	box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.25) inset;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+	transform: translate(0px, -1px);
+}
+
+.emulation_options_left {
+	float: left;
+}
+
+#advanced_emulation_info {
+	background-color: rgba(255, 255, 255, 0.6);
+	border: 1px solid rgba(131, 151, 163, 0.6);
+	border-radius: 6px;
+	margin: 8px 0 20px 20px;
+	padding: 15px 20px;
+	display: none;
+}
+
+#advanced_emulation_info h5 {
+	color: #1C5B83;
+	font-size: 1.07em;
+	font-weight: 600;
+	margin-bottom: 15px;
+	font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+
+#advanced_emulation_info p {
+	font-weight: 400;
+	margin-bottom: 18px;
+}
+
+#advanced_emulation_info a {
+	color: #DD4E0F;
+	font-size: 1.1em;
+	font-weight: 600;
+}
+
+/**
+ * Home Page
+ */
+#main_header {
+	display: inline-block;
+}
+#main_header h1 {
+	color: #234f6b;
+	font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+	font-size: 2em;
+	font-weight: 400;
+	margin: 1.2em 0 0.6em 0;
+}
+
+#tutorial {
+	float: right;
+	clear: right;
+}
+
+#tutorial p,#tutorial_2 p {
+	color: #a1cbe6;
+	font-family: 'Architects Daughter', Arial, Helvetica, sans-serif;
+	font-size: 1.66em;
+	display: inline-block;
+}
+#tutorial p {
+	margin-top: 0;
+}
+#tutorial_2 p {
+	color: #1c5b83;
+	padding-top: 1em;
+}
+
+#tutorial img,#tutorial_2 img {
+	display: inline-block;
+	position: relative;
+	right: 15px;
+	top: 10px;
+}
+
+#phone_selector_container {
+	text-align: center;
+}
+
+.phone_thumb_box img {
+	max-width: initial;
+}
+
+.phone_thumb_box {
+	display: inline-block;
+}
+
+a.phone_thumb_image {
+	display: block;
+	text-align: center;
+	max-height: 250px;
+	z-index: 1;
+}
+
+a.phone_thumb_name {
+	display: block;
+	text-align: center;
+	color: #234f6b;
+	font-size: 0.96em;
+	margin: 6px 0 6px 0;
+	text-decoration: none;
+}
+
+#phone_selector_container li, #emulation_devices li {
+	width: calc( 140px + 1.25rem) !important;
+}
+
+.what_people_say {
+	padding: 5em 0 0 0;
+}
+
+.what_people_say h2 {
+	color: #1C5B83;
+	font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+	font-size: 1.66em;
+	font-weight: 400;
+	margin: 0;
+}
+
+img.samsung_galaxy_y_thumb {margin-top: 68px;}
+img.google_nexus_7_thumb {margin-top: 23px;}
+img.ipad_mini_thumb {margin-top: 42px;}
+
+/**
+ * Url Selection Screen
+ */ 
+#url_selector {
+	display: none;
+}
+
+#url_input_wrapper {
+	margin: 4em 0 0 0;
+	width: 100%;
+}
+
+#url {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #828282;
+	border-radius: 5px;
+	box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+	font-size: 1.33em;
+	padding: 0.4em;
+	width: calc( 100% - 0.6em );
+	height: 48px;
+	font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+}
+
+#go_button {
+	float: right;
+	color: #fff;
+	width: 100%;
+	min-width: 100px;
+	height: 48px;
+	font-size: 1.56em;
+	font-weight: 600;
+	border: 1px solid #4E800D;
+	border-radius: 5px;
+	margin-left: 0.4em;
+	text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.4) inset;
+	background: #91ca23; /* Old browsers */
+	background: -moz-linear-gradient(top, #91ca23 6%, #498200 82%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(6%, #91ca23), color-stop(82%, #498200)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #91ca23 6%, #498200 82%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #91ca23 6%, #498200 82%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #91ca23 6%, #498200 82%); /* IE10+ */
+	background: linear-gradient(to bottom, #91ca23 6%, #498200 82%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(  startColorstr='#91ca23', endColorstr='#498200', GradientType=0); /* IE6-9 */
+	box-sizing: border-box;
+}
+
+.site_selector_container li {
+	padding-bottom: 0;
+}
+
+a.brand_container {
+	border-radius: 5px;
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+	margin: 10px auto;
+	height: 6.6em;
+	width: 12.2em;
+	min-height: 100px;
+	min-width: 200px;
+	display: block;
+}
+
+a.brand_container.bostonglobe {
+	background: url('/themes/sky/images/logos/bostonglobe.png') no-repeat center center, #ffffff; /* Old browsers */
+	background: url('/themes/sky/images/logos/bostonglobe.png') no-repeat center center, -moz-linear-gradient(top, #ffffff 0%, #efefef 100%); /* FF3.6+ */
+	background: url('/themes/sky/images/logos/bostonglobe.png') no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #efefef)); /* Chrome,Safari4+ */
+	background: url('/themes/sky/images/logos/bostonglobe.png') no-repeat center center, -webkit-linear-gradient(top, #ffffff 0%, #efefef 100%); /* Chrome10+,Safari5.1+ */
+	background: url('/themes/sky/images/logos/bostonglobe.png') no-repeat center center, -o-linear-gradient(top, #ffffff 0%, #efefef 100%); /* Opera 11.10+ */
+	background: url('/themes/sky/images/logos/bostonglobe.png') no-repeat center center, -ms-linear-gradient(top, #ffffff 0%, #efefef 100%); /* IE10+ */
+	background: url('/themes/sky/images/logos/bostonglobe.png') no-repeat center center, linear-gradient(to bottom, #ffffff 0%, #efefef 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(  startColorstr='#ffffff', endColorstr='#efefef', GradientType=0); /* IE6-9 */
+	background-size: contain;
+}
+
+a.brand_container.skinnyties {
+	background: url('/themes/sky/images/logos/skinnyties.png') no-repeat center center, #ffffff; /* Old browsers */
+	background: url('/themes/sky/images/logos/skinnyties.png') no-repeat center center, -moz-linear-gradient(top, #ffffff 0%, #efefef 100%); /* FF3.6+ */
+	background: url('/themes/sky/images/logos/skinnyties.png') no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #efefef)); /* Chrome,Safari4+ */
+	background: url('/themes/sky/images/logos/skinnyties.png') no-repeat center center, -webkit-linear-gradient(top, #ffffff 0%, #efefef 100%); /* Chrome10+,Safari5.1+ */
+	background: url('/themes/sky/images/logos/skinnyties.png') no-repeat center center, -o-linear-gradient(top, #ffffff 0%, #efefef 100%); /* Opera 11.10+ */
+	background: url('/themes/sky/images/logos/skinnyties.png') no-repeat center center, -ms-linear-gradient(top, #ffffff 0%, #efefef 100%); /* IE10+ */
+	background: url('/themes/sky/images/logos/skinnyties.png') no-repeat center center, linear-gradient(to bottom, #ffffff 0%, #efefef 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(  startColorstr='#ffffff', endColorstr='#efefef', GradientType=0); /* IE6-9 */
+}
+
+a.brand_container.oneorg {
+	background: url('/themes/sky/images/logos/oneorg.png') no-repeat center center, #ffffff; /* Old browsers */
+	background: url('/themes/sky/images/logos/oneorg.png') no-repeat center center, -moz-linear-gradient(top, #ffffff 0%, #efefef 100%); /* FF3.6+ */
+	background: url('/themes/sky/images/logos/oneorg.png') no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #efefef)); /* Chrome,Safari4+ */
+	background: url('/themes/sky/images/logos/oneorg.png') no-repeat center center, -webkit-linear-gradient(top, #ffffff 0%, #efefef 100%); /* Chrome10+,Safari5.1+ */
+	background: url('/themes/sky/images/logos/oneorg.png') no-repeat center center, -o-linear-gradient(top, #ffffff 0%, #efefef 100%); /* Opera 11.10+ */
+	background: url('/themes/sky/images/logos/oneorg.png') no-repeat center center, -ms-linear-gradient(top, #ffffff 0%, #efefef 100%); /* IE10+ */
+	background: url('/themes/sky/images/logos/oneorg.png') no-repeat center center, linear-gradient(to bottom, #ffffff 0%, #efefef 100%); /* W3C */
+	filter: progid:DXImageTransform.oneorg.gradient(  startColorstr='#ffffff', endColorstr='#efefef', GradientType=0); /* IE6-9 */
+}
+
+a.brand_container.gigaom {
+	background: url('/themes/sky/images/logos/gigaom.png') no-repeat center center, #ffffff; /* Old browsers */
+	background: url('/themes/sky/images/logos/gigaom.png') no-repeat center center, -moz-linear-gradient(top, #ffffff 0%, #efefef 100%); /* FF3.6+ */
+	background: url('/themes/sky/images/logos/gigaom.png') no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #efefef)); /* Chrome,Safari4+ */
+	background: url('/themes/sky/images/logos/gigaom.png') no-repeat center center, -webkit-linear-gradient(top, #ffffff 0%, #efefef 100%); /* Chrome10+,Safari5.1+ */
+	background: url('/themes/sky/images/logos/gigaom.png') no-repeat center center, -o-linear-gradient(top, #ffffff 0%, #efefef 100%); /* Opera 11.10+ */
+	background: url('/themes/sky/images/logos/gigaom.png') no-repeat center center, -ms-linear-gradient(top, #ffffff 0%, #efefef 100%); /* IE10+ */
+	background: url('/themes/sky/images/logos/gigaom.png') no-repeat center center, linear-gradient(to bottom, #ffffff 0%, #efefef 100%); /* W3C */
+	filter: progid:DXImageTransform.gigaom.gradient(  startColorstr='#ffffff', endColorstr='#efefef', GradientType=0); /* IE6-9 */	
+}
+
+a.brand_container.newyorker {
+	background: url('/themes/sky/images/logos/newyorker.png') no-repeat center center, #ffffff; /* Old browsers */
+	background: url('/themes/sky/images/logos/newyorker.png') no-repeat center center, -moz-linear-gradient(top, #ffffff 0%, #efefef 100%); /* FF3.6+ */
+	background: url('/themes/sky/images/logos/newyorker.png') no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #efefef)); /* Chrome,Safari4+ */
+	background: url('/themes/sky/images/logos/newyorker.png') no-repeat center center, -webkit-linear-gradient(top, #ffffff 0%, #efefef 100%); /* Chrome10+,Safari5.1+ */
+	background: url('/themes/sky/images/logos/newyorker.png') no-repeat center center, -o-linear-gradient(top, #ffffff 0%, #efefef 100%); /* Opera 11.10+ */
+	background: url('/themes/sky/images/logos/newyorker.png') no-repeat center center, -ms-linear-gradient(top, #ffffff 0%, #efefef 100%); /* IE10+ */
+	background: url('/themes/sky/images/logos/newyorker.png') no-repeat center center, linear-gradient(to bottom, #ffffff 0%, #efefef 100%); /* W3C */
+	filter: progid:DXImageTransform.wwf.gradient(  startColorstr='#ffffff', endColorstr='#efefef', GradientType=0); /* IE6-9 */
+}
+
+a.brand_container.mashable {
+	background: url('/themes/sky/images/logos/mashable.png') no-repeat center center, #ffffff; /* Old browsers */
+	background: url('/themes/sky/images/logos/mashable.png') no-repeat center center, -moz-linear-gradient(top, #ffffff 0%, #efefef 100%); /* FF3.6+ */
+	background: url('/themes/sky/images/logos/mashable.png') no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #efefef)); /* Chrome,Safari4+ */
+	background: url('/themes/sky/images/logos/mashable.png') no-repeat center center, -webkit-linear-gradient(top, #ffffff 0%, #efefef 100%); /* Chrome10+,Safari5.1+ */
+	background: url('/themes/sky/images/logos/mashable.png') no-repeat center center, -o-linear-gradient(top, #ffffff 0%, #efefef 100%); /* Opera 11.10+ */
+	background: url('/themes/sky/images/logos/mashable.png') no-repeat center center, -ms-linear-gradient(top, #ffffff 0%, #efefef 100%); /* IE10+ */
+	background: url('/themes/sky/images/logos/mashable.png') no-repeat center center, linear-gradient(to bottom, #ffffff 0%, #efefef 100%); /* W3C */
+	filter: progid:DXImageTransform.time.gradient(  startColorstr='#ffffff', endColorstr='#efefef', GradientType=0); /* IE6-9 */
+}
+
+a.brand_container.alistapart {
+	background: url('/themes/sky/images/logos/alistapart.png') no-repeat center center, #ffffff; /* Old browsers */
+	background: url('/themes/sky/images/logos/alistapart.png') no-repeat center center, -moz-linear-gradient(top, #ffffff 0%, #efefef 100%); /* FF3.6+ */
+	background: url('/themes/sky/images/logos/alistapart.png') no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #efefef)); /* Chrome,Safari4+ */
+	background: url('/themes/sky/images/logos/alistapart.png') no-repeat center center, -webkit-linear-gradient(top, #ffffff 0%, #efefef 100%); /* Chrome10+,Safari5.1+ */
+	background: url('/themes/sky/images/logos/alistapart.png') no-repeat center center, -o-linear-gradient(top, #ffffff 0%, #efefef 100%); /* Opera 11.10+ */
+	background: url('/themes/sky/images/logos/alistapart.png') no-repeat center center, -ms-linear-gradient(top, #ffffff 0%, #efefef 100%); /* IE10+ */
+	background: url('/themes/sky/images/logos/alistapart.png') no-repeat center center, linear-gradient(to bottom, #ffffff 0%, #efefef 100%); /* W3C */
+	filter: progid:DXImageTransform.alistapart.gradient(  startColorstr='#ffffff', endColorstr='#efefef', GradientType=0); /* IE6-9 */
+}
+
+a.brand_container.thenextweb {
+	background: url('/themes/sky/images/logos/thenextweb.png') no-repeat center center, #ffffff; /* Old browsers */
+	background: url('/themes/sky/images/logos/thenextweb.png') no-repeat center center, -moz-linear-gradient(top, #ffffff 0%, #efefef 100%); /* FF3.6+ */
+	background: url('/themes/sky/images/logos/thenextweb.png') no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #efefef)); /* Chrome,Safari4+ */
+	background: url('/themes/sky/images/logos/thenextweb.png') no-repeat center center, -webkit-linear-gradient(top, #ffffff 0%, #efefef 100%); /* Chrome10+,Safari5.1+ */
+	background: url('/themes/sky/images/logos/thenextweb.png') no-repeat center center, -o-linear-gradient(top, #ffffff 0%, #efefef 100%); /* Opera 11.10+ */
+	background: url('/themes/sky/images/logos/thenextweb.png') no-repeat center center, -ms-linear-gradient(top, #ffffff 0%, #efefef 100%); /* IE10+ */
+	background: url('/themes/sky/images/logos/thenextweb.png') no-repeat center center, linear-gradient(to bottom, #ffffff 0%, #efefef 100%); /* W3C */
+	filter: progid:DXImageTransform.thenextweb.gradient(  startColorstr='#ffffff', endColorstr='#efefef', GradientType=0); /* IE6-9 */
+}
+
+/**
+ * CSS of the placeholder javascript library
+ */
+.placeholderWrap {position: relative;}
+.placeholderWrap label {
+	color: #555;
+	position: absolute;
+	top: -0.15em;
+	left: 0.4em;
+	pointer-events: none;
+	display: block;
+	font-size: 1.4em;
+}
+.placeholder-focus label {color: #999;}
+.placeholder-changed label {display: none;}
+
+/* For content pages */
+#page {
+	max-width: 1120px;
+	margin: 0 auto;
+	text-align: left;
+	box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.32);
+}
+
+#page .container {
+	padding: 2.8em 3em 2.8em 3em;
+	background: #fff;
+	min-height: 650px;
+}
+
+#page .logo_style {
+	display: block;
+	color: #0E74B4;
+	font-family: 'Exo 2', Arial, Helvetica, sans-serif;
+	font-size: 1.8em;
+	margin: 0 0 1em 0;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+#page h4 {
+	margin: 1.5em 0 0.5em 0;
+	font-size: 1.4375em;
+}
+
+#page label, #page input[type="submit"] {
+	display: table;
+	margin-top: 2em;
+}
+
+#page textarea {
+	height: 10em;
+	width: 100%;
+}
+
+#page .container a {
+	text-decoration: underline;
+}
+
+/* Contact page form notification */
+#contact_notification {
+	line-height: 2.375em;
+	text-align: center;
+	background-color: #ebebeb;
+}
+#contact_notification.error  {
+	height: 2.375em;
+	color: #c25b62;
+	font-size: 1.575em;
+	margin: 1em 0 0 0;
+}
+#contact_notification.success {
+	padding: 2.5% 2%;
+	margin: 2em auto 0 auto;
+}
+#contact_notification.success h3  {
+	display: inline-block;
+	text-indent: 45px;
+	font-size: 1.3em;
+	color: #009cda;
+	background-image: url('/themes/sky/images/check-mark.svg');
+	background-size: 35px 35px;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+/* Phones */
+#device_placeholder {
+	position: relative;
+}
+
+#device_placeholder iframe {
+	border: none;
+}
+
+#device_placeholder>div {
+	margin: 0 auto 0 auto;
+}
+
+#phone_area {
+	margin: 0 auto 0 auto;
+	text-align: center;
+	display: none;
+	position: relative;
+	z-index: 1;
+}
+
+#samsung_galaxy_y_emulator, #iphone_5_emulator, #htc_one_emulator,
+#nokia_lumia_920_emulator, #google_nexus_7_emulator, #ipad_mini_emulator,
+#samsung_galaxy_y_emulator_landscape, #iphone_5_emulator_landscape,
+#htc_one_emulator_landscape, #nokia_lumia_920_emulator_landscape,
+#google_nexus_7_emulator_landscape, #ipad_mini_emulator_landscape {
+	background-repeat: no-repeat;
+	background-position: top left;
+	margin: 0 auto 0 auto;
+	text-align: center;
+}
+
+#samsung_galaxy_y_emulator {
+	background-image: url("/themes/sky/phones/Samsung_Galaxy_Y_portrait.png");
+	width: 506px;
+	height: 732px;
+}
+
+#iphone_5_emulator {
+	background-image: url("/themes/sky/phones/iPhone_5_portrait.png");
+	width: 586px;
+	height: 1001px;
+}
+
+#htc_one_emulator {
+	background-image: url("/themes/sky/phones/HTC_One_portrait.png");
+	width: 599px;
+	height: 1024px;
+}
+
+#nokia_lumia_920_emulator {
+	background-image: url("/themes/sky/phones/Nokia_Lumia_920_portrait.png");
+	width: 767px;
+	height: 1230px;
+}
+
+#google_nexus_7_emulator {
+	background-image: url("/themes/sky/phones/Google_Nexus_7_portrait.png");
+	width: 963px;
+	height: 1437px;
+}
+
+#ipad_mini_emulator {
+	background-image: url("/themes/sky/phones/iPad_mini_portrait.png");
+	width: 1070px;
+	height: 1489px;
+}
+
+#samsung_galaxy_y_emulator_landscape {
+	background-image: url("/themes/sky/phones/Samsung_Galaxy_Y_landscape.png");
+	width: 732px;
+	height: 506px;
+}
+
+#iphone_5_emulator_landscape {
+	background-image: url("/themes/sky/phones/iPhone_5_landscape.png");
+	width: 1001px;
+	height: 586px;
+}
+
+#htc_one_emulator_landscape {
+	background-image: url("/themes/sky/phones/HTC_One_landscape.png");
+	width: 1024px;
+	height: 599px;
+}
+
+#nokia_lumia_920_emulator_landscape {
+	background-image: url("/themes/sky/phones/Nokia_Lumia_920_landscape.png");
+	width: 1230px;
+	height: 767px;
+}
+
+#google_nexus_7_emulator_landscape {
+	background-image: url("/themes/sky/phones/Google_Nexus_7_landscape.png");
+	width: 1437px;
+	height: 963px;
+}
+
+#ipad_mini_emulator_landscape {
+	background-image: url("/themes/sky/phones/iPad_mini_landscape.png");
+	width: 1489px;
+	height: 1070px;
+}
+
+.frame_scroller {
+	display: inline-block;
+	-webkit-overflow-scrolling: touch;
+	overflow: hidden;
+}
+
+.frame_scroller>iframe {
+	width: 100%;
+	height: 100%;
+}
+
+#frame_samsung_galaxy_y_emulator {
+	width: 240px;
+	height: 320px;
+	margin: 206px 0 0 3px !important;
+}
+
+#frame_iphone_5_emulator {
+	width: 320px;
+	height: 568px;
+	margin: 217px 0 0 3px;
+}
+
+#frame_htc_one_emulator {
+	width: 360px;
+	height: 640px;
+	margin: 173px 0 0 -5px;
+}
+
+#frame_nokia_lumia_920_emulator {
+	width: 460px;
+	height: 768px;
+	margin: 192px 0 0 -5px !important;
+}
+
+#frame_google_nexus_7_emulator {
+	width: 603px;
+	height: 966px;
+	margin: 239px 0 0 -4px !important;
+}
+
+#frame_ipad_mini_emulator {
+	width: 768px;
+	height: 1024px;
+	margin: 232px 0 0 -0px;
+}
+
+#frame_samsung_galaxy_y_emulator_landscape {
+	width: 320px;
+	height: 241px;
+	margin: 131px 0 0 0px !important;
+}
+
+#frame_iphone_5_emulator_landscape {
+	width: 568px;
+	height: 320px;
+	margin: 131px 0 0 -1px;
+}
+
+#frame_htc_one_emulator_landscape {
+	width: 640px;
+	height: 360px;
+	margin: 122px 0 0 -38px;
+}
+
+#frame_nokia_lumia_920_emulator_landscape {
+	width: 768px;
+	height: 460px;
+	margin: 156px 0 0 -79px !important;
+}
+
+#frame_google_nexus_7_emulator_landscape {
+	width: 966px;
+	height: 603px;
+	margin: 181px 0 0 13px !important;
+}
+
+#frame_ipad_mini_emulator_landscape {
+	width: 1024px;
+	height: 768px;
+	margin: 151px 0 0 -3px;
+}
+
+/**
+ * Marketing page
+ */
+#marketing .container {
+	padding: 4em 0 3.8em 0;
+}
+#marketing .container.first {
+	padding-top: 12em;
+}
+
+#marketing .background {
+	background-size: cover;
+	background-image: url("/themes/sky/images/sky2.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+#marketing .margin {
+	margin: 1em 0 1em 0;
+}
+
+#marketing h1 {
+	text-align: center;
+	margin: 0;
+	font-size: 1.8em;
+	font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
+
+#marketing h2 {
+	text-align: center;
+	margin: 0;
+	font-size: 2em;
+	font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	color: #000;
+}
+
+#marketing h3 {
+	text-align: center;
+	margin: 15px 0 0 0;
+	font-size: 1.68em;
+	font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
+
+#marketing p {
+	line-height: 1.5;
+	margin: 30px 0 40px 0;
+	font-size: 1.1em;
+	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+}
+
+#marketing p.details {
+	font-size: 1.16em;
+}
+
+#marketing p.no_margin {
+	margin: 40px 0 0 0;
+}
+
+#marketing p.description {
+	margin: 0 0 10px 0;
+	font-weight: 400;
+	font-size: 1.68em;
+	color: #a2a2a2;
+	text-align: center;
+	font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+
+#marketing .green_button {
+	font-weight: 600;
+}
+
+/**
+ * Device info
+ */
+#current_device_data>div {
+	font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+	padding-top: 3.5em;
+}
+
+#current_device_data h4 {
+	font-size: 1.38em;
+	font-weight: 700;
+	margin: 0 0 1em 0;
+}
+
+#share_this {
+	display: none;
+	text-align: left;
+}
+
+#share_this.marketing{
+	display: initial;
+}
+
+.device_info img {
+	vertical-align: baseline;
+}
+#share_this div {
+	position: relative;
+	top: 10px;
+}
+
+#share_this_text {
+	border: 1px solid #aaa;
+	font-size: 0.9em;
+	border-radius: 3px 0 0 3px;
+	padding: 5px 8px 5px 8px;
+	width: 200px;
+	height: 36px;
+	font-weight: 600;
+	box-sizing: border-box;
+}
+
+#share_this_text:focus {
+	border-color: #4DA0C4;
+	box-shadow: 0 0 4px 0 #2986CF;
+}
+
+#share_this_notification {
+	color: #97A635;
+	display: none;
+	font-size: 0.9em;
+}
+
+#copy_to_clipboard {
+	height: 36px;
+	font-size: 0.9em;
+	line-height: 0.9em;
+	background: transparent;
+	border: 1px solid #aaa;
+	border-left: 0;
+	display: none;
+	border-radius: 0 3px 3px 0;
+	margin-right: 0.3em;
+	padding: 5px 8px 5px 8px;
+	width: 50px;
+	box-sizing: border-box;
+}
+
+
+#device_thumb {
+	height: 200px;
+}
+
+.device_thumb_image {
+	display: inline-block;
+	text-align: center;
+	height: 250px;
+	width: 140px;
+	z-index: 1;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+
+#device_loader {
+	display: table;
+	position: absolute;
+	background: #fff;
+	z-index: 99;
+	
+}
+#device_loader > div {
+	display: table-cell;
+	vertical-align: middle;
+	
+}
+#device_loader > div > div {
+	display: table;
+	margin:0 auto;
+	text-align: center;
+}
+
+#device_loader > div > div >h3 {
+	text-align: center;
+}
+
+#device_loader img {
+	display: inline;
+	margin: 0 1em 1em 1.5em;
+}
+
+/**
+ * Testimonials
+ */
+.testimonial {
+	margin: 1.5em 0 0 0;
+	height: 69px;
+	max-width: 470px;
+}
+.testimonial img {
+	height: 69px;
+	width: 69px;
+	float: left;
+	margin: 1px 10px 0 0;
+	border-radius: 6px;
+}
+.testimonials_content {
+	width: calc( 100% - 79px);
+	float: right;
+}
+.testimonial span {
+ 	display: block;
+	margin: 0 !important;
+	line-height: 1.3em !important;
+	font-size: 1em !important;
+}
+.testimonial .title {
+	color: #003558;
+}
+
+/*
+ * All devices
+ */
+.all_devices_logo img {
+	max-height: 100px;
+	max-width: 200px;
+	margin: 50px 0 100px 0;
+}
+
+.all_devices_device {
+	margin: 0 0 40px 0;
+	height: 320px;
+}
+
+a.all_devices_title {
+	color: #234f6b;
+	text-decoration: none !important;
+	font-size: 1.2em;
+}
+
+a.all_devices_description {
+	color: #234f6b;
+	text-decoration: none !important;
+}
+
+
+
+
+/**
+ * Footer styles
+ */
+.footer_space {
+	height: 15em;
+	clear:both;
+}
+
+footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 0.8em;
+	line-height: 1.7em;
+}
+footer .nav {
+	border-top: 1px solid #CACACA;
+	padding-top: 5px;
+	color: #999999;
+}
+
+footer .nav a {
+	color: #1c5b83;
+	text-decoration: underline;
+}
+
+footer .copyright {
+	color: #bbb;
+	margin: 0em 0 1em 0;
+}
+
+footer div.background-container {
+	max-width: 891px;
+	margin: 0 auto;
+}
+
+footer div.background {
+	padding-top: 11.672278338945%;
+	background-image: url('/themes/sky/images/phones.png');
+	background-size: cover;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+
+footer #cards img {
+	max-height: 34px;
+	width: 100%; 
+}
+
+/* Common application elements */
+.green_button {
+	border-radius: 4px;
+	padding: 6px 15px 6px 15px;
+	text-align: center;
+	background: #49b31f;
+	color: #fff;
+	font-size: 1.58em;
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.75);
+	text-decoration: none;
+	border: 0;
+	box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.5);
+}
+.green_button:hover, .green_button:focus {color: #fff;}
+
+.check_list {
+	display: inline-block;
+	list-style-type: none;
+}
+.check_list.line_height {line-height: 1.5em;}
+.check_list li {
+	background-image: url('/themes/sky/images/check_green.svg');
+	background-size: 20px 20px;
+	background-position: left 0.25em;
+	padding: 0 0 0.4em 30px;
+	background-repeat: no-repeat;
+}
+
+/**
+ * Authentication Screens
+ */
+.authentication_content {
+	margin: 1em auto;
+}
+
+.sky_form {	
+	max-width: 410px;
+	min-height: 320px;
+	padding: 25px 35px 15px 35px;
+	border-radius: 10px;
+	background-color: rgba(255,255,255,0.3);
+	box-shadow: 0px 0px 4px 0px rgba(0, 55, 89, 0.25) inset, 0px 0px 10px -2px rgba(0, 55, 89, 0.5);
+}
+.sky_form .sky_form_content {
+	max-width: 340px;
+	margin: 0 auto;
+}
+.sky_form h3 {
+	margin: 0;
+	font-weight: 600;
+	font-size: 1.833em;
+	color: #003759;
+}
+
+.app_info h4 {
+	font-weight: 600;
+	font-size: 1.333em;
+	color: #003759;	
+}
+.app_info h5 {
+	margin: 0 0 0.4em 2.7em;
+	font-weight: 600;
+	font-size: 1em;
+	color: #003759;	
+}
+
+.authentication_content .text {
+	display: block;
+	font-size: 0.9em;
+	color: #59859f;
+	padding: 0 0 20px 0;
+}
+.authentication_content #error_message {
+	display: block;
+	font-size: 0.9em;
+	color: #ff0000;
+	padding: 0 0 20px 0;
+}
+
+.sky_form label {
+	font-size: 0.9em;
+	color: #59859f;
+	margin-left: 10px;
+}
+
+.sky_form .forgot_password_link {
+	display: block;
+	position: relative;
+	bottom: -2em;
+	font-size: 0.9em;
+	padding: 0 0 2em 0;
+	color: #59859f;
+}
+.authentication_content .signup_link {
+	color: #59859f;
+	text-decoration: underline;
+}
+
+#mtm_provider_form {display: none;}
+
+.sky_form .user_input {
+	display: block;
+	width: 100%;
+	padding: 0.6em;
+	margin: 0 0 10px 0;
+	box-sizing: border-box;
+	background: #fff;
+	border: 1px solid #828282;
+	border-radius: 5px;
+	box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+}
+.sky_form .user_input.error {
+	border: 1px solid #ff0000;
+	box-shadow: 0 0 2px 0 rgba(255, 0, 0, 0.5);
+}
+
+.sky_form .green_button {
+	max-width: 162px;
+	margin: 10px 0 0 0;
+	font-weight: 600;
+}
+
+.sky_form .placeholderWrap label {
+	color: rgba(0, 0, 0, 0.6);
+	top: 8px;
+	left: 7px;
+	font-size: 1em;
+	z-index: 1;
+}
+.sky_form .provider_text_clipped {
+	display: none;
+}
+.sky_form .providers_buttons {
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	margin: 0 0 15px 0;
+	font-size: 1.44em;
+	padding: 0 0 0 2.6em;
+	color: #fff;
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.5);
+	border-radius: 5px;
+	background-repeat: no-repeat;
+	background-position: 0.5em center;
+	background-size: 30px 30px;
+}
+#google_provider {
+	background-color: #db4c3e;
+	background-image: url('/themes/sky/images/providers/google-plus-icon.svg');
+}
+#facebook_provider {
+	background-color: #3f5f94;
+	background-image: url('/themes/sky/images/providers/facebook-icon.svg');
+}
+#mtm_provider {
+	background-color: #49b31f;
+	background-image: url('/themes/sky/images/providers/email-icon.svg');
+}
+
+.sky_form .divider {
+	position: absolute;
+	display: block;
+	height: 100%;
+	width: 1px;
+	top: 0;
+	left: 2em;
+}
+#google_provider .divider {background-color: #cd3c2e;}
+#facebook_provider .divider {background-color: #395582;}
+#mtm_provider .divider {background-color: #3ea614;}
+
+/* Signup Screen */
+#signup_screen.authentication_content {margin-bottom: 10em;}
+
+#pricing_screen.authentication_content {margin-bottom: 10em;}
+
+/* Login Screen */
+#login_screen.authentication_content {margin-bottom: 2em;}
+#login_screen .sky_form{margin: 0 auto;}
+#login_screen .green_button {width: 100%;}
+
+/* Forgot Password */
+#forgot_password_screen.authentication_content {margin-bottom: 6.6em;}
+#forgot_password_screen .sky_form {margin: 0 auto;}
+#forgot_password_screen .sky_form h3 {margin: 0 0 0.8em 0;}
+#forgot_password_screen .placeholderWrap {position: initial;}
+#forgot_password_screen .green_button {width: 100%;}
+
+/* Reset Password Screen */
+#reset_password_screen.authentication_content {margin-bottom: 6.6em;}
+#reset_password_screen .sky_form {margin: 0 auto;}
+#reset_password_screen .sky_form h3 {margin: 0 0 1em 0;}
+#reset_password_screen .placeholderWrap label {width: 147px;}
+#reset_password_screen .green_button {width: 100%;}
+#reset_password_screen input[type="checkbox"] {margin: 1.5em 0 1.5em 0;}
+
+
+/* Clear Spaces */
+div.clear {clear: both;}
+
+.hidden {display: none;}
+
+ul,li {margin-bottom: 0;}
+semi {font-weight: 600;}
+
+table.striped {
+	display: inline-block;
+	font-size: 1em;
+	margin-left: 2em;
+}
+table.striped td {padding: 5px 2em 5px 5px;}
+table.striped td.data {
+	font-weight: 700;
+	padding: 5px 0.9em 5px 5px;
+}
+table.striped tr:nth-child(odd) {background: #EEE;}
+
+
+.inline-block {display: inline-block !important;}
+
+.margin_top {margin-top: 40px;}
+.margin_top_2 {margin-top: 20px;}
+.margin_bottom {margin-bottom: 40px;}
+
+.margin_bottom_2 {margin-bottom: 20px;}
+
+/* Google ads */
+#vertical_temp_ad_banner {
+	position: absolute;
+	top: 250px;
+	right: 8%;
+	height: 600px;
+	width: 160px;
+}
+#temp_ad_banner {
+	width: 728px;
+	margin: 4em auto 0em auto;
+}
+#responsive_side_ad_banner {
+	position: absolute;
+	top: 220px;
+	right: 0;
+	height: 600px;
+	width: 160px;
+}
+#responsive_bottom_ad_banner {
+	max-width: 62.5rem; /* Foundation max width */
+	margin: 4em auto 0em auto;
+}
+
+@media only screen and (max-width: 1299px) {
+	#responsive_side_ad_banner { display: none; }
+}
+
+@media only screen and (min-width: 1600px) {
+	#responsive_side_ad_banner {width: 300px;}
+}
+
+/* Foundation Styling */
+/* Any rem values used are to override foundation style and are used instead of em for consistancy */
+.row, .column {height: 100%;}
+.small-padding-right {padding-right: 0.4687rem !important;}
+.small-padding-left {padding-left: 0.4687rem !important;}
+
+/* Tablets and lower */
+@media only screen and (max-width: 1025px) {
+	.g-gplus-container {display: none;}
+	
+	#url {width: calc( 100% + 0.6em );}
+	
+	#advanced_emulation_info {margin:30px 0 20px 0;}
+	
+	.what_people_say {padding: 2em 0 0 0;}
+	
+	#share_this {padding: 0 0.9375rem 2em 0.9375rem !important;}
+	
+	.testimonial img {margin-top: 5px;}
+	
+	.authentication_content .app_info {margin-top: 5em;}
+	
+	#signup_screen.authentication_content, #pricing_screen.authentication_content {
+		margin-bottom: 5em;
+	}
+		
+	.sky_form {margin: 0 auto;}
+	
+	.sky_form .forgot_password_link {bottom: -1em;}
+}
+/* Mobile phones */
+@media only screen and (max-width: 641px) {
+	.hidden-for-small-only {
+	    clip: rect(1px, 1px, 1px, 1px);
+	    height: 1px;
+	    overflow: hidden;
+	    position: absolute !important;
+	    width: 1px;
+    }
+	
+	a#logo {font-size: 1.6em;}
+	#right_menu {padding-bottom: 0.6em;}
+	
+	#main_header h1 {font-size: 1.6em;}
+	
+	#page .container {padding: 1.4em 1.5em 1.4em 1.5em;}
+		
+	.emulation_options_left {float: none;}
+	
+	#options_menu {padding: 0 0 0.2em 0;}
+	#options_menu nav {padding: 0.3em 0 0 0;}
+	
+	#tutorial {float: none;}
+	#tutorial_2 p {padding-top: 0;}
+	
+	#url {width: 100%;}
+	#url_input_wrapper {
+		margin-top: 2em;
+		font-size: 0.72em;
+	}
+	
+	.site_selector_container li {width: 100% !important;}
+	
+	.testimonial img {
+		height: 48px;
+		width: 48px;
+	}
+	.testimonial .title b {display: block;}
+	.testimonials_content {width: calc( 100% - 58px);}
+	
+	.sky_form {
+		max-width: initial;
+		border-radius: 0;
+		background-color: #e1f3f8;
+		box-shadow: none;
+		border-top: 3px solid #bbd7df;
+		border-bottom: 3px solid #bbd7df;
+	}
+	.app_info {
+		padding-left: 0.9375rem !important;
+		padding-right: 0.9375rem !important;
+	}
+	.sky_form h3 {font-size: 1.78em;}
+	.sky_form .providers_buttons {font-size: 1.34em;}
+	.sky_form .provider_text {display: none;}
+	.sky_form .provider_text_clipped {display: inline-block;}
+	
+	table.striped {
+		display: table;
+		width: 100%;
+		text-align: left;
+		margin: 0;
+	}
+	
+	footer #cards {margin: 4px 0 2px 0;}
+}
+/* Ultra low resolution devices */
+@media only screen and (max-width: 321px) {
+	html, body {
+		font-size: 14px !important;
+	}
+	#phone_selector_container li, #emulation_devices li {
+		width: 100% !important;
+	}
+	#options_menu #play_link {top: 8px;}
+	
+	#share_this_text {width: 120px;}
+	
+	#url_input_wrapper {font-size: 0.7em;}
+	
+	#phone_selector_container img, #emulation_devices img {max-width: 100%;}
+	img.samsung_galaxy_y_thumb {margin-top: 8px;}
+	img.ipad_mini_thumb {margin-top: 35px;}
+	
+	.sky_form .placeholderWrap label {top: 11px;}
+	
+	.authentication_content .app_info {margin-top: 1.6em;}
+	#signup_screen.authentication_content, #pricing_screen.authentication_content {
+		margin-bottom: 0.7em;
+	}
+
+	#tutorial p,#tutorial_2 p {font-size: 1.3em;}
+	
+	.testimonial img {margin-top: 4px;}
+	
+	#main_header h1 {font-size: 1.4em;}
+	
+	.r1_hide {display: none;}
+
+	.r1_break {display: block;}
+}
