@@ -1,0 +1,341 @@
+#editorframe{width:1000px!important}
+#navbar-iframe{height:0;visibility:hidden;display:none}
+body{background:#fff;text-align:left;font:13px &quot;wf_SegoeUI&quot;,&quot;Segoe UI&quot;,&quot;Segoe&quot;,&quot;Segoe WP&quot;;-webkit-font-smoothing:antialiased;color:#444;overflow-x:hidden!important;margin:0 auto}
+#wrapper{width:100%;overflow:hidden;background:#fff;left:0;z-index:2;margin:0 auto}
+a:link,a:visited{color:#3C91E1;text-decoration:none}
+a:hover{color:#3C91E1}
+h1,h2,h3,h4{font-family:&quot;Fjalla One&quot;, helvetica;font-weight:400;text-transform:uppercase;font-size:18px;margin:0;padding:0;}
+::selection{background:#3C91E1;color:#FFF;text-shadow:none}
+*:focus{outline: none;}
+#menu{position:absolute;left:0;top:0;width:230px;color:#fff!important;overflow:hidden;z-index:-1;padding:10px}
+#menu ul{display:inline;list-style:none;text-align:left;overflow:hidden;width:200px;float:left;font-size:12px;border-top:#222 solid 1px;margin:10px 0 0;padding:0}
+#menu li a,#menu li a:link,#menu li a:visited{text-decoration:none;color:#DDD;display:block;border-bottom:#333 solid 1px;transition:all ease-out .2s;margin:0 auto;padding:10px}
+#menu li a:hover{background:#222;color:#fff}
+#navbar-wrap{width:100%;height:37px;background:#3C91E1;overflow:hidden;border-bottom:#212121 solid 3px;margin:0 auto}
+.navbar{width:1200px;text-align:left;color:#FFFF00;margin:0 auto}
+.navbar ul{display:inline;list-style:none;text-align:left;overflow:hidden;width:auto;float:left;font-size:12px;margin:0 0 0 10px;padding:0}
+.navbar li a,.navbar li a:link,.navbar li a:visited{text-decoration:none;color:#fff;padding-right:5px;display:block;border-right:#aaa solid 1px;transition:all ease-out .2s;margin:0 auto}
+
+.jam-buka {color:#ddd;font-weight:bold; float:right}
+.phone{background:url(https://3.bp.blogspot.com/-LRkmvT0PHoU/V8Y_nMeRPYI/AAAAAAAAAMA/PNPuiwj49j4CIgxQUFbrQ7HJipatO9PVQCLcB/s1600/ikon-sms.png) left center no-repeat;float:left;color:#ddd;font-weight:700;margin-right:10px;overflow:hidden;padding:10px 15px 10px 35px}
+.bbm{background:url(https://2.bp.blogspot.com/-UraaU8Wvggc/V8Y-tYCcC3I/AAAAAAAAAL4/_YmODis_81od_o7Bqj3qvCQhWtAgvWclACLcB/s1600/icon-bbm-786.png) left center no-repeat;background-size:24px auto;float:left;color:#ddd;font-weight:700;margin-right:10px;overflow:hidden;padding:10px 15px 10px 35px}
+.scart{background:url(https://1.bp.blogspot.com/-JmDjQa3xIEw/V8ZQ6_ljqzI/AAAAAAAAAMY/sprwZdB5fNsdlU5UltIj9ytQZX6FjG0RACLcB/s1600/keranjang-belanja-786.png) left no-repeat;background-size:18px auto;float:left;color:#fff;font-weight:bold;margin-right:10px;overflow:hidden;padding:10px 2px 10px 30px; cursor:pointer; display:none}
+  .scart a:link, .scart a:visited, .scart a:hover {color:#fff}
+.wa{background:url(https://2.bp.blogspot.com/-FnM8ME9KBIU/V8Y9i_piR7I/AAAAAAAAALw/-YePOrKAVVMnzzm20n7pRRCw088WcQqAQCLcB/s1600/whatsapp-786.png) left center no-repeat;float:left;color:#ddd;font-weight:bold;margin-right:10px;overflow:hidden;padding:10px 15px 10px 35px}
+
+.secondary-menu{float:left;margin-top:5px}
+.secondary-menu ul{display:inline;list-style:none;text-align:left;overflow:hidden;float:left;font-weight:700;margin:0;padding:0}
+.secondary-menu li{list-style:none;float:left;padding:5px}
+.secondary-menu li a,.secondary-menu li a:link,.secondary-menu li a:visited{text-decoration:none;color:#000;padding-right:5px;display:block;transition:all ease-out .2s;margin:0 auto}
+
+
+.halaman-bantuan{float:left;margin-top:5px}
+.halaman-bantuan ul{display:inline;list-style:none;text-align:left;overflow:hidden;float:left;font-weight:700;margin:0;padding:0}
+.halaman-bantuan li{list-style:none;float:left;padding:3px}
+.halaman-bantuan li a,.secondary-menu li a:link,.secondary-menu li a:visited{text-decoration:none;color:#000;padding right:5px;display:block;transition:all ease-out .2s;margin:0 auto}
+
+
+#header-wrap{width:100%;height:70px;margin:0 auto}
+#header-left{float:left;width:250px;height:80px;margin-top:5px;margin-left:10px;overflow:hidden}
+#header-left img{height:80px}
+.click-menu {display:none}
+#header-center{float:left;width:500px;height:50px;margin-top:7px;margin-left:5px}
+.socmed{float:right;width:425px;height:52px; left top no-repeat;overflow:hidden;padding:20px 5px 0 0px; font-weight:700;color:#777 !important;overflow:hidden}
+
+.socmed img{width:38px;cursor:pointer;transition:all ease-out .2s}
+.socmed img:hover{opacity:0.7}
+#header-inner{background-position:left;float: left;width: 250px;margin-top: 10px;}
+#header h1,#header h2{font-size:1px;letter-spacing:0;text-transform:none;opacity:0;margin:5px 5px 0;padding:10px 10px 0 0;cursor:default;}
+#header a{font-family:&quot;Fjalla One&quot;, helvetica;text-transform:uppercase;color:#3F3F3F;text-decoration:none}
+#header a:hover{color:#3F3F3F}
+#header .description,#header h3{color:#333;font-size:12px;max-width:700px;text-transform:none;opacity:0;margin:0 5px 5px;padding:0 20px 15px}
+#header img{margin-left:auto;margin-right:auto}
+#main-wrapper{float:left;overflow:hidden;width:950px;word-wrap:break-word; padding:0}
+#sidebar-wrapper{width:220px;float:right;margin-top:10px;overflow:hidden;padding:0}
+
+#related-posts h4, #sidebar-wrapper h3, #sidebar-wrapper h2 {width:913px;font-size:18px; padding-bottom:5px;background:url(https://1.bp.blogspot.com/-PeUVyqK1Y8g/V-vJfj8dqKI/AAAAAAAAAVs/nClyAqZjcPoQ0aC2XGQ72y5SzKrBDTuQACLcB/s1600/bottom-grey.jpg) -50px bottom no-repeat;}
+#comments{font-family:Arial,Helvetica,sans-serif}
+.main .Blog{border-bottom-width:0}
+.post{margin:0}
+.post h1 strong,.post h2 strong{font-weight:700;text-decoration:none}
+.post h1 a,.post h1 a:visited,.post h2 a,.post h2 a:visited{display:block;font-weight:700;text-decoration:none}
+.post h1 a:hover,.post h2 a:hover{text-decoration:none}
+.post-body{color:#3F3F3F;font-size:12px;line-height:1.4em;margin:0; position:relative}
+.post-body li{list-style:none; left no-repeat;padding:4px 30px}
+.post-body blockquote{line-height:1.3em}
+.post-footer{color:#999;font-style:normal;letter-spacing:0;text-transform:none;margin:0;padding:0}
+.comment-link{margin-left:0}
+.post blockquote{color:#666;font-style:italic;margin:1em 20px}
+.post blockquote p{margin:.75em 0}
+.comment-form{max-width:675px;clear:both}
+.comments{clear:both;margin-top:10px;margin-bottom:0;line-height:1em}
+.comments .comments-content{font-size:12px;margin-bottom:16px;font-weight:400;text-align:left;line-height:1.4em}
+.comments .comment .comment-actions a:hover{text-decoration:none;background:#eee;}
+.comments .comments-content .comment-thread ol{list-style-type:none;text-align:none;padding:0}
+.comments .comments-content .inline-thread{padding:.5em 1em}
+.comments .comments-content .comment-thread{margin:8px 0}
+.comments .comments-content .comment-replies{margin-top:1em;margin-left:40px;font-size:12px;background:#fff}
+.comments a:link,.comments a:visited{color:#2D5E7B}
+.comments .comments-content .comment{margin-bottom:16px;padding-bottom:8px}
+.comments .comments-content .comment:first-child{padding-top:16px}
+.comments .comments-content .comment:last-child{border-bottom:0;padding-bottom:0}
+.comments .comments-content .comment-body{position:relative}
+.comments .comments-content .user{font-style:normal;font-weight:700}
+.comments .comments-content .user a{color:#2D5E7B;font-size:14px;font-weight:700;text-decoration:none}
+.comments .comments-content .icon.blog-author{width:18px;height:18px;display:inline-block;margin:0 0 -4px 6px}
+.comments .comments-content .datetime{color:#999;float:right;font-size:11px;text-decoration:none}
+.comments .comments-content,.comments .comments-content .comment-content{margin:0 0 8px}
+.comment-header{background-color:#F4F4F4;margin-bottom:5px;padding:5px}
+.comments .comments-content .comment-content{text-align:none}
+.comments .comments-content .owner-actions{position:absolute;right:0;top:0}
+.comments .comments-replybox{border:none;height:250px;width:100%}
+.comments .comment-replybox-single{margin-top:5px;margin-left:48px}
+.comments .comment-replybox-thread{margin-top:5px}
+.comments .comments-content .loadmore a{display:block;text-align:center;padding:10px 16px}
+.comments .thread-toggle{cursor:pointer;display:inline-block}
+.comments .continue{cursor:pointer}
+.comments .comments-content .loadmore{cursor:pointer;max-height:3em;margin-top:3em}
+.comments .comments-content .loadmore.loaded{max-height:0;opacity:0;overflow:hidden}
+.comments .thread-toggle .thread-arrow{display:inline-block;height:6px;width:7px;overflow:visible;padding-right:4px;margin:.3em}
+.comments .thread-expanded .thread-arrow{background:url(&#39;data:image/png; base64,iVBORw0KGgoAAAANSUhEUgAAAAc AAAAHCAYAAADEUlfTAAAAG0lEQVR42mNgwAfKy8v/48I4FeA0AacVDFQBAP9wJkE/KhUMAAAAAElFTkSuQmCC&#39;) no-repeat scroll 0 0 transparent}
+.comments .thread-collapsed .thread-arrow{background:url(&#39;data:image/png; base64,iVBORw0KGgoAAAANSUhEUgAAA AcAAAAHCAYAAADEUlfTAAAAJUlEQVR42mNgAILy8vL/DLgASBKnApgkVgXIkhgKiNKJ005s4gDLbCZBiSxfygAAAAB JRU5ErkJggg==&#39;) no-repeat scroll 0 0 transparent}
+.comments .avatar-image-container{background-image:url(http://img846.imageshack.us/img846/7357/unled1oww.jpg);background-position:center center;background-repeat:no-repeat;float:left;width:36px;max-height:36px;vertical-align:middle;overflow:hidden;margin:0;padding:3px}
+.comments .avatar-image-container img{width:36px}
+.comments .comment-block{margin-left:48px;position:relative}
+#blog-pager-newer-link a,#blog-pager-newer-link a:visited{float:left;font-size:11px;color:#3f3f3f;text-transform:uppercase;font-size:10px;background:#EEE;font-weight:bold;text-decoration:none;margin:0;padding:10px 15px}
+#blog-pager-older-link a,#blog-pager-older-link a:visited{float:right;font-size:11px;color:#3f3f3f;text-transform:uppercase;font-size:10px;background:#EEE;font-weight:bold;text-decoration:none;margin:0;padding:10px 15px}
+#blog-pager-older-link a:hover,#blog-pager-newer-link a:hover{color:#3f3f3f;background:#DDD;text-decoration:none}
+#blog-pager{text-align:center;overflow:hidden;height:auto;float:left;width:100%;padding:8px 0;margin-top:15px}
+.feed-links{clear:both;line-height:2.5em;margin:0}
+.clear{clear:both}
+
+  #side-page {display:none}
+.side-top{width:100%;float:left;overflow:hidden;margin-bottom:20px}
+.side-top li{border-bottom:#ddd dashed 1px;padding:6px 5px 6px 0}
+.side-top li a,.side-top li a:link,.side-top li a:visited{text-decoration:none;width:100%;color:#444;transition:all ease-out .2s;margin:0 auto}
+.side-pop{width:100%;float:left;overflow:hidden}
+.side-pop h3,.side-pop h2{margin-bottom:10px}
+.side-pop li{background:#EEE;border:#EEE solid 5px;overflow:hidden;margin-bottom:5px;padding:0 5px 0 0 !important}
+.side-pop li img{float:left;margin-right:15px}
+.side-pop li a,.side-pop li a:link,.side-pop li a:visited{text-decoration:none;width:95px;float:left;color:#666;text-transform:uppercase;overflow:hidden;font-weight:700;font-size:11px;transition:all ease-out .2s;margin:0 auto 0 0}
+  .PopularPosts .item-title{padding-bottom:.2em;overflow:hidden;float:left;margin-top:10px;max-height:45px}
+/* For main page */
+.PopularPosts .item-snippet{width: 80px;float: left;height: 20px; overflow:hidden}
+.PopularPosts .item-thumbnail{float:left;margin:0!important}
+.main .widget{margin:0 0 15px;padding:0}
+#sidebar-wrapper .widget{background:#fff;margin-right:10px;width:220px;padding:5px}
+.widget-content{margin:0px;padding:0}
+.profile-img{border:1px solid #CCC;float:left;margin:0 5px 5px 0;padding:4px}
+.profile-data{color:#999;font-size:78%;font-size-adjust:none;font-stretch:normal;font-style:normal;font-variant:normal;font-weight:700;letter-spacing:.1em;line-height:1.6em;text-transform:uppercase;margin:0}
+.profile-datablock{margin:.5em 0}
+.profile-textblock{line-height:1.6em;margin:.5em 0}
+.profile-link{font-size:78%;font-size-adjust:none;font-stretch:normal;font-style:normal;font-variant:normal;font-weight:400;letter-spacing:.1em;line-height:normal;text-transform:uppercase}
+.showpageArea{font-size:11px}
+.showpageArea a{text-decoration:underline;color:#fff!important}
+.showpageNum a{text-decoration:none;border:1px solid #000;font-size:11px;background:#212121;text-transform:uppercase;margin:3px;padding:5px 10px}
+.showpageNum a:hover{border:1px solid #3C91E1;background-color:#3C91E1}
+.showpagePoint{text-decoration:none;border:1px solid #EC1C24;font-size:11px;background:#EC1C24;color:#fff;text-transform:uppercase;margin:3px;padding:5px 10px}
+.showpageOf{text-decoration:none;border:1px solid #3C91E1;font-size:11px;background:#3C91E1;color:#fff!important;text-transform:uppercase;margin:0 3px 0 0;padding:5px 10px}
+.showpage a{text-decoration:none;border:1px solid #3C91E1;font-size:11px;background:#3C91E1;text-transform:uppercase;padding:5px 10px}
+.footer-kolom {width:100%;background:#fff;overflow:hidden;padding: 0px 0px;margin-top:20px; padding-left:30px;}
+
+
+
+ .creator-wrap {width:100%;margin:0 auto;background:#3C91E1;padding:20px 0px;}
+.creator{width:1100px;overflow:hidden;font-size:12px;margin:0 a; color:#fff;}
+.creator a:link, .creator a:visited {color:#fff !Important}
+.footer{float:left;width:150px;min-height:230px;padding:0 0px}
+
+
+.footer h3,.footer h2{font-family:&quot;wf_SegoeUI&quot;,&quot;Segoe UI&quot;,&quot;Segoe&quot;,&quot;Segoe WP&quot;;font-weight:bold;color:#fff;font-size:14px;margin-bottom:0px}
+.footer ul{list-style:none;text-align:left;overflow:hidden;float:left;margin:0;padding:0}
+.footer li{padding:3px 5px}
+.footer li a,.footer li a:link,.footer li a:visited{text-decoration:none;color:#fff;transition:all ease-out .2s;margin:0 auto}
+.post-comment-link{-moz-background-clip:border;-moz-background-inline-policy:continuous;-moz-background-origin:padding;margin-left:0;padding-left:0;font-size:large}
+
+
+
+.banner2 {margin-top:0px;margin-left:10px;float:left;background:#fff;width:745px;height:250px;overflow:hidden}
+.banner3 {margin-top:0px;margin-right:15px;float:right; background:#fff;width:200px;height:250px;overflow:hidden}
+.banner4 {margin-top:0px;margin-right:15px;float:right; background:#fff;width:200px;height:250px;overflow:hidden}
+.pembatas {margin-top:20px;margin-bottom:10px;float:left; float:top; overflow:hidden}
+
+
+
+.breadcrumbs{width:100%;text-transform:capitalize;font-size:12px;font-weight:700;padding:15px 5px 15px 10px}
+.breadcrumbs a{color:#444; text-transform:uppercase; font-size:11px;}
+.payment{font-size:11px;float:right;margin-right:30px;color:#aaa;text-align:center}
+.posting{overflow:hidden}
+.judul{float:left;width:740px; padding-left:350px}
+.judul h1{background:none;color:#444444;font-size:20px;line-height:32px;padding:0}
+
+
+
+
+
+
+
+
+.deskripsi-kolom{float:left;width:250px;color:#555;font-size:14px; margin:30px 0;padding:10px 0}
+.gambar{float:left;width:350px!important;overflow:hidden}
+.gambar-besar{float:left;overflow:hidden;width:100%;max-height:300px;margin-bottom:5px}
+.gambar-besar img{width:300px}
+.gambar-kecil{float:left;overflow:hidden}
+.gambar-kecil img{width:45px;border:#ccc solid 1px}
+.artikel{width:100%;float:left;overflow:hidden;padding:20px 0}
+.kolom{background:#FEFEFE;z-index:2;line-height:18px;border:1px solid #DDD;padding:15px 20px}
+.button{background:#212121;color:#FFF;display:inline-block;font-family:&quot;Fjalla One&quot;, sans-serif;text-transform:uppercase;font-size:16px;margin-left:10px;cursor:pointer;padding:10px 20px}
+.buy-area{width:250px;margin-top:10px;float:left;margin-left:45px;background:#fff;border:0px solid #EFEFEF;overflow:hidden;padding:10px 10px 20px}
+.buy-area .price{font-family:&quot;Fjalla One&quot;, sans-serif;width:230px;background:#fff;text-align:center;font-weight:400;font-size:26px;padding:10px}
+.buy-area .as{width:245px;overflow:hidden}
+.buy-area .omg{width:70px;text-align:center;float:left}
+.buy-area .tek{width:160px;float:right;text-align:left;font-size:11px}
+.buy-area .tek h3{font-size:15px;color:#444;margin:0;padding:0}
+.buy-area .buy{width:230px;text-align:center;font-size:15px;text-transform:uppercase;font-weight:700;background:#EC1C24;color:#FFF!important;transition:all ease-in .1s;margin:10px 0;padding:10px}
+.buy-area .buy:hover{background:#000}
+.more{overflow:hidden;float:left;width:210px;height:285px;border:1px solid #fff;margin:10px 20px 10px 0;padding:0}
+.more:hover{border:1px solid #fff}
+
+.image{width:100%;height:210px;overflow:hidden;position:relative}
+.image img{min-width:100%!important;max-width:100%!important;min-height:210px}
+.images{width:100%;height:245px;overflow:hidden;position:relative}
+.images img{max-width:100%!important;min-height:250px}
+.titel {color:#fff;height:60px;font-size:11px;text-transform:uppercase;margin:10px 5px 0;text-align:center;}
+.more .titel {color:#666;}
+.titel h2,.titel h3{font-family:&quot;wf_SegoeUI&quot;,&quot;Segoe UI&quot;,&quot;Segoe&quot;,&quot;Segoe WP&quot;,&quot;Tahoma&quot;,&quot;Verdana&quot;,&quot;Arial&quot;,&quot;sans-serif&quot; !important;font-size:1.2em;font-weight:700;color:#777 !important;margin-bottom:5px;height:33px;overflow:hidden}
+  .titel h2:hover, .titel h3:hover {color:#000 !important;}
+.top{background-color:#111;overflow:hidden;padding:8px 6px 3px 6px;bottom:20px;right:20px;position:fixed;transition:0.1s all ease-in;opacity:0; z-index:3;}
+.top:hover{background-color:#db1d1d}
+.tag-article {background: #EC1C24;padding: 3px 11px;font-size:10px;cursor: default;margin-top:5px;display:inline-block !important;}
+  #main-artikel {display:none}
+
+.quickedit,.comments .comments-content .comment-thread:empty,.comments .thread-chrome.thread-collapsed,.harga,.deskrip{display:none}
+#content,#content-wrapper{width:1200px;overflow:hidden;margin:0 auto}
+.navbar li,.primary-menu li{list-style:none;float:left;padding:10px 5px}
+.navbar li a:hover,.secondary-menu li a:hover,.primary-menu li a:hover,.side-top li a:hover,.side-pop li a:hover{color:#EC1C24}
+.header,#header{width:1200px;height:100px;overflow:hidden;margin:0 auto}
+.comments .comment .comment-actions a,.comments .continue a{display:inline-block;background:#f5f5f5;color:#424242!important;text-align:center;text-shadow:0 -1px 0 #FFF;text-decoration:none;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;font:11px/18px sans-serif;margin:0 10px 0 0;padding:2px 8px}
+.side-top ul,.side-pop ul{list-style:none;width:100%;text-align:left;overflow:hidden;float:left;margin:0;padding:0}
+.showpage a:hover,.showpageNum a:link,.showpage a:link,.buy-area a{text-decoration:none;color:#fff!important}
+#footer a,.more a:link,.more a:visited {color:#666}
+.more a:hover {color:#111}
+  #footer a:hover,.footer li a:hover {color:#fff;}
+.button:hover,.active{background:#3C91E1;color:#fff}
+.discount {display:none;}
+/* error css */
+  .errordiv {margin: 0 auto;width:90%;max-width:900px;text-align:center;padding:50px 0px;line-height:26px;}
+  .numberteks {font-size:43px;font-weight:bold;color: #222222;}
+  .errorteks {padding:20px 0px;font-size:14px;}
+@media screen and max-device-width480px {
+.comments .comments-content .comment-replies{margin-left:0}
+}
+@media only screen and (max-width: 960px) {
+  
+    #content, #content-wrapper {width:935px;}
+    .bank-acc {margin-right:60px;}
+ }
+@media only screen and (max-width: 840px) {
+.payment{margin-right:10px}
+#main-wrapper{float:none;margin:10px auto 0}
+.header{width:745px}
+.navbar{width:100%}
+.contact-wrap{overflow:hidden;width:700px;margin:0 auto}
+#header-left{float:left;width:270px;height:80px;margin-top:10px;margin-left:23px;overflow:hidden}
+#header-center {width:440px;margin-left:0px;margin-top:15px;}
+.menu-navbar {width:700px !important;margin-left:0px !important;}
+
+#slide{float:none;width:700px;margin:20px auto}
+
+.socmed,.navbar ul,#sidebar-wrapper,.hide-tablet,.banner1{display:none}
+.email,.bbm,.phone{float:left}
+#content-wrapper,.creator{width:700px}
+    .shipping {width:700px;}
+    .shipping-logo {width:380px;height:50px;}
+    #about {width:260px;}
+    #contact {width:220px}
+    .footer {width:150px;}
+    .bank-acc {float:left;width:100%; padding-bottom:10px;}
+    .bca, .mandiri, .bri, .bni, .atm-bersama, .visa, .mastercard {float:left;margin-left:0px;margin-right:10px;}
+}
+@media only screen and (max-width: 720px) {
+    .navbar {width:95%;}
+    #header-left {margin-left:10px;width:260px}
+    #header-center {width:430px;}
+    .creator {width:660px;}
+    #main-wrapper, .shipping {width:680px}
+ .banner2, .banner3, .banner4 {display:none}
+}
+@media only screen and (max-width: 640px) {
+    .navbar, .header, #content-wrapper {width:530px}
+   .banner2, .banner3, .banner4 {display:none}
+    .click-menu {display:block}
+
+ 
+
+    #header-left {margin-left:0px;}
+    .hide-phone, #header-center {display:none}
+    .socmed {display:block}
+    .creator {width:540px}
+    #produk-populer {height:680px !important;}
+    #produk-populer li, .wrappfullpost {margin:10px 25px !important;}
+    .shipping {width:570px;}
+    .shipping-text {width:200px;}
+    .shipping-logo {width:360px;}
+    body{background:#212121}
+    #wrapper{width:100%;position:relative}
+    #menu{z-index:1!important}
+  	.separator{border:none}
+ }
+@media only screen and (max-width: 480px){
+.deskripsi-kolom {width:320px;}
+#text-deskripsi {width:320px;}
+.menu-navbar {width:100% !important;}
+.phone, .bbm {float:left;margin-left:10px; margin-right:0px; padding-right:10px;}
+
+#header{width:auto}
+.footer{width:auto;height:auto;margin-left:15px}
+.creator{width:90%}
+.contact-wrap{overflow:hidden;width:100%;margin:0 auto}
+#header-left{float:left;width:280px;height:90px;text-align:center;margin-top:10px;margin-left:0px}
+ #produk-populer h2, #produk-populer h3, .ind h2, .ind h3 {margin-left:0px !important;}
+.judul{float:left;width:100%;text-align:center;margin-bottom:10px}
+.judul h1{font-size:20px}
+.content{overflow:hidden;float:left;width:90%;background:#212121;height:150px;border:1px solid #CCC;margin:10px}
+.images{width:120px!important;float:left;height:150px!important;overflow:hidden;position:relative;}
+.images img{min-height:150px!important;width:100%!important}
+.image{width:120px!important;float:left;height:120px!important;overflow:hidden;position:relative;margin-top:10px;}
+.image img{min-height:120px!important;max-height:120px!important;width:100%!important}
+.titel{color:#FFF;height:60px!important;float:left;width:135px!important;font-size:11px;margin:10px 5px 0 10px}
+.buy-area{width:300px;float:none;background:#FFFFFF;border:1px solid #EFEFEF;overflow:hidden;margin:10px auto 20px;padding:10px 10px 10px}
+.deskripsi-kolom{text-align: left; float:left;width:100%;line-height:20px;color:#555;margin:20px auto 10px 2%;padding:20px 0}
+.gambar{float:left;width:98%!important;overflow:hidden}
+.gambar-besar{float:left;overflow:hidden;width:98%!important;margin-left:2%;text-align:center;height:auto;margin-bottom:5px}
+
+
+.gambar-besar img{max-width:100%!important}
+.deskrip{display:block;float:left;width:95%;line-height:20px;color:#555;margin:10px auto 10px 2%;padding:10px 0}
+#related-posts{max-height:auto!important;width:97%}
+#related-posts h3{margin-bottom:10px;margin-left:2%}
+.more{margin-left:2%;width:94%!important;height:auto!important;padding-top:0!important; padding:10px;background:#eee}
+#blog-pager-older-link{margin-right:20px}
+#blog-pager-newer-link{margin-left:20px}
+#blog-pager{width:94%;margin:0 5%;margin-top:20px;}
+.breadcrumbs{margin-bottom:10px;border-bottom:#ddd solid 1px}
+.socmed,.navbar ul,.email,#sidebar-wrapper,#header-center,.hide-tablet,.hide-phone,#slide,.artikel,.gambar-kecil,.top{display:none}
+#content-wrapper,#header-wrapper,.header,.navbar,{width:96%}
+.wrappfullpost,.sharethis{width:100%!important}
+    .shipping {width:96%;}
+    .shipping-text {width:100%;margin-bottom:20px;}
+	.shipping-logo {margin:0 auto;width:365px;float:none; overflow: hidden;height: 50px;} 
+    .bca, .mandiri, .bri, .bni, .atm-bersama, .visa, .mastercard {float:left;margin-left:0px;margin-right:10px;margin-bottom:10px;}
+}
+@media only screen and (max-width: 360px){
+
+    #sliderFrame, #slider {display:none;}
+    .buy-area {margin-left:30px;}
+    .shipping-logo {width:285px;}
+    .footer  {margin-left:0px;margin-bottom:0px;}
+  }
+@media only screen and (max-width: 320px){
+    .buy-area {margin-left:10px;}
+  }
