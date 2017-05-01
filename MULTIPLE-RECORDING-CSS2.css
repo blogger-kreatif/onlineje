@@ -1,0 +1,274 @@
+@font-face{font-family:"ditty-twitter-ticker";src:url("../fonts/ditty-twitter-ticker.eot");src:url("../fonts/ditty-twitter-ticker.eot?#iefix") format("embedded-opentype"),url("../fonts/ditty-twitter-ticker.woff") format("woff"),url("../fonts/ditty-twitter-ticker.ttf") format("truetype"),url("../fonts/ditty-twitter-ticker.svg#ditty-twitter-ticker") format("svg");font-weight:normal;font-style:normal}[data-icon]:before{font-family:"ditty-twitter-ticker" !important;content:attr(data-icon);font-style:normal !important;font-weight:normal !important;font-variant:normal !important;text-transform:none !important;speak:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}[class^="mtphr-dnt-twtr-icon-"]:before,[class*=" mtphr-dnt-twtr-icon-"]:before{font-family:"ditty-twitter-ticker" !important;font-style:normal !important;font-weight:normal !important;font-variant:normal !important;text-transform:none !important;speak:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.mtphr-dnt-twtr-icon-reply:before{content:"\e000"}.mtphr-dnt-twtr-icon-retweet:before{content:"\e001"}.mtphr-dnt-twtr-icon-heart:before{content:"\e002"}.mtphr-dnt-twitter-tweet-avatar-left{position:relative}.mtphr-dnt-twitter-tweet-avatar-left .mtphr-dnt-twitter-avatar{position:absolute;top:4px;left:0}.mtphr-dnt-twitter-tweet-avatar-left .mtphr-dnt-twitter-content{padding-left:10px}.mtphr-dnt-twitter-links a{display:inline-block;vertical-align:middle;font-size:12px;line-height:12px;font-weight:600;margin-right:30px}.mtphr-dnt-twitter-links a:last-child{margin-right:0}.mtphr-dnt-twitter-links a i{display:inline-block;vertical-align:middle;font-size:16px;margin-right:5px}.mtphr-dnt-twitter-links a i:before{vertical-align:middle;margin-top:-1px}
+
+/*
+
+*/
+
+@import url("../central/style.css");
+
+body.home,
+body.page-id-2 {
+	background-color: #000;
+}
+
+header {
+	background-color: rgba(0,0,0,0.7) !important;
+	background: rgba(0,0,0,0.7) !important;
+}
+
+.logo a {
+	visibility: visible;
+}
+
+nav.main_menu ul li a {
+	text-transform: uppercase;
+	padding: 0 10px;
+	line-height: 95px !important
+}
+
+nav.main_menu ul li li a {
+	line-height: 24px !important;
+}
+
+.top_area_line_text_holder h4 {
+	text-align: center;
+	color: #fff;
+	margin: 35px 0px;
+	text-transform: uppercase;
+}
+
+.title.with_image h1 {
+	display: none;
+}
+
+.mtphr-dnt-title {
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.mtphr-dnt-twitter-name {
+	margin-right: 5px;
+}
+
+.mtphr-dnt-twitter-time {
+	margin-left: 5px;
+}
+
+.mtphr-dnt-twitter-text {
+	line-height: 30px;
+}
+
+nav.main_menu.social {
+	font-size: 90px;
+}
+
+nav.main_menu.social ul li a {
+	padding: 0;
+}
+
+nav.main_menu.social ul li a:hover,
+.footer_bottom a:hover {
+	background: none;
+	color: #ff6600;
+}
+
+nav.main_menu.social ul li a i {
+	line-height: 90px;
+	font-size: 24px;
+}
+
+
+
+nav.main_menu.social ul li a.showcast {
+	background: url(images/showcast-logo.png) no-repeat;
+	height: 21px;
+	width: 21px;
+}
+
+nav.main_menu.social ul li a.showcast:hover {
+	background: url(images/showcast-logo-over.png) no-repeat;
+}
+
+.mtphr-dnt-twitter-name {
+	text-transform: uppercase;
+}
+
+.mtphr-dnt-twitter-text {
+	color: #949494;
+}
+
+.rev_slider_wrapper {
+	margin: 0 auto !important;
+}
+
+.top_area_line_holder {
+	margin: 0 -1000px 50px;
+}
+
+.home .footer_top {
+	display: none !important;
+}
+
+.home div.content {
+	min-height: 600px;
+}
+
+.page-id-2 .content {
+	min-height: 690px !important;
+}
+
+.content {
+	background-color: #000;
+	padding-top: 0px;
+}
+	.page-id-108 .content {
+		background-color: #fff;
+	}
+
+	.single-portfolio_page .content {
+		background-color: #000;
+		padding-top: 95px;
+		min-height: 400px !important;
+	}
+
+	.single-portfolio_page .container {
+		padding-top: 50px;
+	}
+
+	.container .hover-inner p {
+		text-align: center !important;
+	}
+
+	.single-portfolio_page .container p {
+		text-align: center !important;
+	}
+
+	.portfolio_title_holder {
+	padding: 0 0 35px 0;
+	margin: 0 0 45px 0;
+	border-bottom: 1px solid #ddd;
+	display: block;
+	}
+
+	.portfolio_title_holder span {
+		display: none;
+	}
+
+.portfolio_images img {
+	display: block;
+	margin: 0 auto 40px !important;
+}
+
+.container {
+	background-color: #fff;
+	margin-bottom: 50px
+}
+
+	.page-id-2 .container {
+		background: #000;
+		margin:0;
+	}
+
+	.title.with_image .container {
+		background: transparent;
+		display: none;
+	}
+
+	.title .container {
+		background: transparent;
+	}
+
+.title {
+	clear: both;
+	margin-top: 0px;
+}
+
+	.page-id-108 .title {
+		padding-top: 95px;
+		height: 155px;
+	}
+
+	.page-id-108 .title .container {
+		margin: 0;
+	}
+
+	.title.with_image {
+		background-color: #000 !important;
+		margin: 0;
+	}
+
+.page-id-108 .container_inner {
+	margin-bottom: 0;
+}
+
+
+
+.drop_down .second .inner2 ul {
+	width: 380px;
+}
+
+.footer_bottom {
+	min-height: 130px;
+	height: auto;
+}
+
+.footer_bottom p {
+	line-height: 25px;
+	padding: 20px 0;
+}
+
+.footer_bottom p:first-child {
+	padding-bottom: 0;
+}
+
+.footer_bottom a .fa {
+	font-size: 24px !important;
+	padding: 0 6px;
+}
+
+.page-id-2 .container_inner,
+.page-id-2 .top_area_line_holder {
+	margin-bottom: 0;
+}
+
+.page-id-2 .container_inner p {
+	display: none;
+}
+
+.single-portfolio_page .two_columns_75_25>.column1,
+.single-portfolio_page .two_columns_75_25>.column2 {
+	width: 50%;
+}
+
+.container p {
+	text-align: justify !important;
+}
+
+.single-portfolio_page .two_columns_75_25>.column2 p {
+	text-align: justify !important;
+}
+
+a.chillybin {
+	background: url('images/cb.png') no-repeat;
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	zoom: 1;
+	vertical-align: middle;
+	margin-left: 2px;
+}
+
+.chillybin span {
+	text-indent: -9999px;
+	display: none;
+}
+
+.fmr-chkbx-wrap {
+    width: 24%;
+    display: inline-block;
+}
+.fmr-bx-wrap {
+    width: 49%;
+    display: inline-block;
+}
