@@ -241,3 +241,31 @@
 .mtphr-dnt-icon-pause:before {
   content: "\e047";
 }
+
+
+
+/*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+*/
+body.page-id-1289 .full_width {padding-top:125px;max-width:1140px; margin:0 auto;padding-bottom:40px;}
+.fmr-chkbx-wrap { width: 24%; display: inline-block;}
+.fmr-bx-wrap {width: 49%;display: inline-block;}
+.fmr-bx-wrap.lst-wrap{float:right;}
+.frm-hr {margin:20px 0 40px}
+@media (max-width:1024px){
+body.page-id-1289 .full_width {padding-top:200px}
+.fmr-chkbx-wrap {width:49%;}
+.fmr-chkbx-wrap .fmr-chkbx {margin-bottom:0;}
+}
+
+
+@media (max-width:768px){
+body.page-id-1289 .full_width {padding:100px;max-width:90%;}
+.fmr-chkbx-wrap {width:100%;}
+}
+
+@media (max-width:600px){
+.fmr-bx-wrap {width:100%;display: inline-block;}
+}	
