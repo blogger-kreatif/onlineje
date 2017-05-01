@@ -1,0 +1,7 @@
+$(document).ready(function(){
+	$('.vitec-sites').click(function(){
+		$('.vitec-list').slideToggle('slow');
+		$('.vitec-sites').toggleClass('active');
+		$('.vitec-list').toggleClass('open');
+	});	
+});
