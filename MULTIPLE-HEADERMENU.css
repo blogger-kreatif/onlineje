@@ -1,0 +1,167 @@
+.vitec
+{
+	height:26px;
+	padding:5px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #535353;
+	display:block;	
+}
+	
+.vitec .vitec-logo
+{
+	float:left;
+	line-height:13px;
+	font-size:11px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color:#fff;
+	padding-left:40px;
+	position:relative;
+	margin-left:47px;
+}
+	
+.vitec .vitec-logo .logo-image
+{
+	display:block;
+	position:absolute;
+	left:0px;
+	top:-6px;
+	height:36px;
+	width:36px;
+	background:url('../images/vitec-logo.png') no-repeat center left;
+}
+
+.vitec .vitec-sites
+{
+	float:right;
+	cursor:pointer;
+	margin-right:30px;
+	line-height:26px;
+	font-size:11px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight:200;
+	color:#fff;
+	padding-right:15px;
+	background:url('../images/downarrow.png') no-repeat center right;
+}
+
+.vitec .vitec-sites.active
+{
+	background:url('../images/uparrow.png') no-repeat center right;
+}
+
+.vitec-list
+{
+	padding:20px 30px 20px 47px;
+	display:none;
+	font-family:Arial, Helvetica, sans-serif;
+	background: #535353;
+}
+
+.vitec-list a
+{
+	font-size:14px;
+	font-family:itc;
+	font-weight:200;
+	color:#ddd;
+	position:relative;
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif;	
+}
+
+.vitec-list a:hover
+{
+	color:#fff;
+	background-color: #535353;
+}
+
+.vitec-list a .note
+{
+	display:block;
+	font-size:11px;
+	color:#999;
+}
+
+.vitec-list::after
+{
+	display:block;
+	clear:both;
+	content:"";
+}
+
+.vitec-list ul
+{
+	width:220px;
+	margin:0px;
+	padding:0;
+	padding-right:30px;
+	float:left;
+	list-style:none;
+}
+
+.vitec-list ul li
+{
+	display:block;
+	padding:0px;
+	margin:0px;
+	margin-bottom:3px;
+}
+
+.vitec-list ul li:first-child
+{
+	border-bottom:1px solid rgba(255, 255, 255, 0.12);
+	margin-bottom:6px;
+	padding-bottom:6px;	
+}
+
+.vitec-list ul li:first-child a
+{
+	display:block;
+	font-size:16px;
+	font-weight:bold;
+	color:#fff;
+}
+
+.vitec-list ul.one li:first-child
+{
+	font-size:16px;
+	font-weight:bold;
+	color:#fff;
+}
+
+
+.vitec-list ul.one { width:140px;}	
+.vitec-list ul.two { width:250px;}
+.vitec-list ul.three { width:420px; padding-right:0px;}
+
+.vitec-list ul.three li { width:50%; float:left;}
+.vitec-list ul.three li:first-child { width:100%;}
+.vitec-list ul.one li { border-bottom:none;}
+
+@media (max-width:1100px)
+{	
+	.vitec-list ul.one { width:140px;}	
+	.vitec-list ul.two { width:240px;}
+	.vitec-list ul.three { width:450px;}
+}
+
+@media (max-width:980px)
+{	
+	.vitec-list ul.one { width:140px;}	
+	.vitec-list ul.two { width:175px;}
+	.vitec-list ul.three { width:330px;}
+	.vitec-list ul.three li { box-sizing:border-box; padding-right:14px;}
+	.vitec .vitec-logo { margin-left:20px;}
+	.vitec .vitec-sites { margin-right:20px;}
+	.vitec-list { padding-left:20px; padding-right:20px;}
+}
+
+@media (max-width:768px)
+{
+	.hidden-sm { display:none;}
+	.vitec-list ul { margin-top:20px;}
+	.vitec-list ul.one { width:auto; float:none; margin-top:0px;}	
+	.vitec-list ul.two { width:auto; float:none;}
+	.vitec-list ul.three { width:auto; float:none;}
+	.vitec-list ul.three li { width:auto; float:none;}
+}
