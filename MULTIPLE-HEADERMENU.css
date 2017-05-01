@@ -28,7 +28,7 @@
 	top:-6px;
 	height:36px;
 	width:36px;
-	background:url('../images/vitec-logo.png') no-repeat center left;
+	background:url('https://lh3.googleusercontent.com/-v_4EKrlgsQY/WQeOLoPqT5I/AAAAAAAAD4c/2H_QvSWcK7MIkb2CJGn8bNjU6_5_P2SzACLcB/h20/logoai.png') no-repeat center left;
 }
 
 .vitec .vitec-sites
@@ -42,12 +42,12 @@
 	font-weight:200;
 	color:#fff;
 	padding-right:15px;
-	background:url('../images/downarrow.png') no-repeat center right;
+	background:url('https://lh3.googleusercontent.com/-V1jr0eVp-pA/WQeLhiJ017I/AAAAAAAAD4M/tzRdOzaHxEwQxW3ofcRl2epv9LS_iQOZACLcB/h10/arrow-down.png') no-repeat center right;
 }
 
 .vitec .vitec-sites.active
 {
-	background:url('../images/uparrow.png') no-repeat center right;
+	background:url('https://lh3.googleusercontent.com/-oc0OLsUpEM8/WQeL-HnCR0I/AAAAAAAAD4Q/SSFTf3rkiFgl4JETSwIjpzkCSRdwrKePACLcB/h10/arrow-up.png') no-repeat center right;
 }
 
 .vitec-list
