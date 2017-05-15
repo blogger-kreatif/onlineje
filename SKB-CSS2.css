@@ -159,7 +159,7 @@ html {
 /* line 20, ../sass/_base.sass */
 .video-out {
   background: #000001;
-  background-image: url('../images/pb_redink.jpg?1426257831');
+  background-image: url('https://lh3.googleusercontent.com/--n8BNwZNL4U/WRkY-_f3MNI/AAAAAAAAENw/xS1NGOWfdd8vE7yqTyWS3sQwPAok9xIVQCLcB/h1600/DSC_0174.jpg');
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -197,7 +197,7 @@ html {
   right: 0;
   height: 100%;
   width: 100%;
-  background-image: url('../images/bg.png?1426257973');
+  background-image: url('https://lh3.googleusercontent.com/-8ZPJgE9OFhU/WRka5RGa2NI/AAAAAAAAEN8/sb1jSZvaZYYGi67NjPq62hZtuENk_NPkQCLcB/h1600/bg.png');
 }
 
 /* line 51, ../sass/_base.sass */
