@@ -27,15 +27,15 @@ $(window).load(function() {
     });
     MESSAGES.push({
         delay: 2200,
-        text: 'dengan harga yang murah dan bagus .'
+        text: 'dengan harga yang murah dan bagus.'
     });
     MESSAGES.push({
         delay: 3600,
-        text: 'Agan berada di tempat yang tepat...'
+        text: 'Silahkan klik link marketplace kami di bawah, Thanks!'
     });
     MESSAGES.push({
         delay: 5200,
-        text: 'Silahkan klik link toko yang ada di bawah, Thanks!'
+        text: 'Di tunggu ordernya ya. '
     });
     $container = $('#container');
     $message = $('#message');
