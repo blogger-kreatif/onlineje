@@ -31,11 +31,11 @@ $(window).load(function() {
     });
     MESSAGES.push({
         delay: 3600,
-        text: 'Silahkan klik link marketplace kami di bawah, Thanks!'
+        text: 'Klik aja link lapak marketplace kami di bawah!'
     });
     MESSAGES.push({
         delay: 5200,
-        text: 'Di tunggu ordernya ya. '
+        text: 'Di tunggu ordernya ya, Terima Kasih...'
     });
     $container = $('#container');
     $message = $('#message');
