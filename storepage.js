@@ -19,23 +19,23 @@ $(window).load(function() {
     MESSAGES = [];
     MESSAGES.push({
         delay: 0,
-        text: '> Oops, ERROR 404 NOT FOUND...'
+        text: '> Selamat datang di Aris item Official Store...'
     });
     MESSAGES.push({
         delay: 1200,
-        text: 'You may have mis-typed the URL.'
+        text: 'Kalo agan lagi nyari aksesoris kamera.'
     });
     MESSAGES.push({
         delay: 2200,
-        text: 'Or the page has been removed.'
+        text: 'dengan harga yang murah dan bagus .'
     });
     MESSAGES.push({
         delay: 3600,
-        text: 'Actually, there is nothing to see here...'
+        text: 'Agan berada di tempat yang tepat...'
     });
     MESSAGES.push({
         delay: 5200,
-        text: 'Click on the links below to do something, Thanks!'
+        text: 'Silahkan klik link toko yang ada di bawah, Thanks!'
     });
     $container = $('#container');
     $message = $('#message');
