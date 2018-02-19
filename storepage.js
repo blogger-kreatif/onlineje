@@ -1,10 +1,3 @@
-/*
-* DOZ - Creative 404 Pages
-* Build Date: August 2015
-* Author: Madeon08
-* Copyright (C) 2015 Madeon08
-* This is a premium product available exclusively here : http://themeforest.net/user/Madeon08/portfolio
-*/
 
 /* ------------------------------------- */
 /* LOVE Text Effect .................... */
@@ -19,11 +12,11 @@ $(window).load(function() {
     MESSAGES = [];
     MESSAGES.push({
         delay: 0,
-        text: '> Selamat datang di Aris item Official Store...'
+        text: '> Selamat datang di toko online aris item...'
     });
     MESSAGES.push({
         delay: 1200,
-        text: 'Kalo agan lagi nyari aksesoris kamera.'
+        text: 'Kalo agan lagi nyari aksesoris kamera...'
     });
     MESSAGES.push({
         delay: 2200,
